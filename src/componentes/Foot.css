@@ -1,0 +1,23 @@
+/* Footer.css */
+/* Footer.css */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  color: white; 
+  width: 100%;
+  background-color: #ffe4e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+  font-family: 'Lato';
+  color: #333; 
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
