@@ -1,0 +1,27 @@
+
+.menuDiarioContenedor{
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center; 
+    margin-left:31rem;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    width: 50%;
+}
+
+.menuDiarioContenido{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    
+}
+.contador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1; 
+    margin: 0 5px; 
+}
+

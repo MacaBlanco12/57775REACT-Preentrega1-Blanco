@@ -6,7 +6,7 @@ body {
   background-color:bisque;
   background-image: url('assets/inicio.jpg');
 background-size: 1550px;
-background-repeat: no-repeat;
+background-repeat: repeat;
   margin: 0;
   padding: 0;
   font-family: 'Leto';
@@ -33,14 +33,15 @@ background-repeat: no-repeat;
   margin-bottom: 20px;
 }
 
-.navbar-links {
+.menu {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  list-style-type: none;
 }
 
-.navbar-links a {
+.menu li a  {
   font-family: 'Leto';
   font-size: 15px;
   padding: 15px 20px;
@@ -48,10 +49,13 @@ background-repeat: no-repeat;
   color: #333;
   width: 100%;
   text-align: center;
+  text-decoration: none; 
+
+
  
 }
 
-.navbar-links a:hover {
+.menu :hover {
   background-color:bisque ;
   color:#000000;
   font-size: 20px;

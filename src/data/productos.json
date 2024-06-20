@@ -1,0 +1,75 @@
+[
+  {
+    "id": "1",
+    "nombre": "Pata muslo de pollo con papas",
+    "imagen": "../public/assets/lunes.jpg",
+    "descripcion": "Pata muslo de pollo con papas rusticas al horno",
+    "categoria": "menu-diario",
+    "precio": "4.000"
+  },
+  {
+    "id": "2",
+    "nombre": "Canelones con salsa",
+    "imagen": "../public/assets/martes.jpg",
+    "descripcion": "Canelones de espinaca y ricota, con salsa bolognesa",
+    "categoria": "menu-diario",
+    "precio": "4.000"
+  },
+  {
+    "id": "3",
+    "nombre": "Guiso de lentejas",
+    "imagen": "../public/assets/guiso.jpg",
+    "descripcion": "Guiso de lentejas con papa, batata, zanahoria, arvejas y porotos",
+    "categoria": "menu-diario",
+    "precio": "4.000"
+  },
+  {
+    "id": "4",
+    "nombre": "Pastel de papas",
+    "imagen": "../public/assets/jueves.jpg",
+    "descripcion": "Pastel de papas de carne vacuna",
+    "categoria": "menu-diario",
+    "precio": "4.000"
+  },
+  {
+    "id": "5",
+    "nombre": "Ñoquis",
+    "imagen": "../public/assets/29.jpg",
+    "descripcion": "Ñoquis de papa con bolognesa",
+    "categoria": "menu-diario",
+    "precio": "4.000"
+  },
+  {
+    "id": "6",
+    "nombre": "Carrotcake",
+    "imagen": "../public/assets/carrot.jpg",
+    "descripcion": "Carrotcake a base de harina integral, zanahoria, azucar mascabo",
+    "categoria": "pasteleria",
+    "precio": "2.000"
+  },
+  {
+    "id": "7",
+    "nombre": "Galletitas",
+    "imagen": "../public/assets/galletitas.jpg",
+    "descripcion": "Galletitas de harina integral, sin gluten, con baño de chocolate sin azucar",
+    "categoria": "pasteleria",
+    "precio": "1.000"
+  },
+  {
+    "id": "8",
+    "nombre": "Empanadas",
+    "imagen": "../public/assets/empanadas.jpg",
+    "descripcion": "Empanadas de masa integral, rellenas de carne vacuna, con cebolla y aceitunas",
+    "categoria": "menu-ejecutivo",
+    "precio": "1.000"
+  },
+  {
+    "id": "9",
+    "nombre": "Tartitas",
+    "imagen": "../public/assets/Tartitas.jpg",
+    "descripcion": "Tartitas individuales de verduras, acompañadas por un mix de verdes",
+    "categoria": "congelados",
+    "precio": "2.000"
+  }
+  
+]
