@@ -1,21 +1,27 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
+import React, {  useContext, useState } from 'react'
 import './ItemDetail.css'
+import {toCapital} from "../toCapital"
+import ItemCount from '../ItemCount/ItemCount';
+import { Context } from '../../Context/Context';
+
 
 const ItemDetail = ({ item }) => {
 
-    const [valor, setValor] = useState();
-    var stock = 5
-    const incrementaContador = () => {
-        if (valor < stock)
-            setValor(valor + 1);
-    };
+    const {carrito,Agregar} = useContext(Context);
+
+    const [cantidad,setCantidad] = useState(1);
 
     const decrementaContador = () => {
-        if (valor >= 1) {
-            setValor(valor - 1);
-        }
+        if (cantidad >= 1){   setCantidad(cantidad - 1)}
+
+     
+
+    }
+    const incrementaContador = () => {
+        if (cantidad < item.stock ) {setCantidad(cantidad + 1)}
+
     };
+
 
     return (
         <div className='menuDiarioContenedor'>
@@ -24,13 +30,13 @@ const ItemDetail = ({ item }) => {
                 <p>{item.descripcion}</p>
                 <p>Precio: ${item.precio} </p>
                 <p>Categoria: {item.categoria} </p>
-                <div className='contador'>
-                    <button className='boton-' onClick={decrementaContador} disabled={valor === 0} >-</button>
-                    <strong className='contadorCarrito'>{valor} </strong>
-                    <button className='boton+' onClick={incrementaContador} disabled={valor === stock}>+</button>
-                    <button className='botonAñade'> Añadir</button>
-                </div>
-                <a className="ver-mas" href={`/item/${item.id} `} >Ver mas</a>
+                <ItemCount 
+                cantidad={cantidad} 
+                incrementaContador={incrementaContador} 
+                decrementaContador={decrementaContador} 
+                Agregar= {()=>{Agregar(item,cantidad)}}
+                />
+            
             </div>
         </div>
 
