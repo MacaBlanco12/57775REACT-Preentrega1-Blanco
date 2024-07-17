@@ -1,6 +1,6 @@
 import React, {  useContext, useState } from 'react'
 import './ItemDetail.css'
-import {toCapital} from "../toCapital"
+
 import ItemCount from '../ItemCount/ItemCount';
 import { Context } from '../../Context/Context';
 

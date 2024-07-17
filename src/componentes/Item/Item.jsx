@@ -10,7 +10,8 @@ const Item = ({ producto }) => {
 
         <div className='menuDiarioContenedor'>
             <div className='menuDiarioContenido'>
-                <h4>Menu:{producto.nombre}</h4>
+                <h4>Menu:</h4>
+                <h4>{producto.nombre}</h4>
                 <img className='imgMenu' src={producto.imagen} alt={producto.nombre} />
                 <p>{producto.descripcion}</p>
                 <p>Precio: ${producto.precio} </p>

@@ -5,18 +5,11 @@
     height: auto;
 }
 .menuDiarioContenedor{
-    
+    width: 500px;
     background-color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    flex-direction:row  ;
-    
-   
-    
 }
 
-.menuDiarioContenido{
-    max-width: 200px;
+.menuDiarioContenido{ 
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -26,10 +19,4 @@
     
     
 }
-.contador{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex: 1; 
-    margin: 0 5px; 
-}
+
