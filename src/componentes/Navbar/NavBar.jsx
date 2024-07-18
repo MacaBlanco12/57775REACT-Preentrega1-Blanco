@@ -7,13 +7,13 @@ const NavBar = () => {
 
     return (
         <div className='navbar-container'>
-            <Link to="/"><img  className='imgLogo' src="/assets/logos.png" alt="imagen del logo" />
+            <Link to="/"><img  className='imgLogo' src="/assets/logo.jpg" alt="imagen del logo" />
              </Link>
             <div className="menu">
-                <li><Link className="menu-link" to="/category/menu-diario">  Menu Diario</Link> </li>
-                <li><Link className="menu-link" to="/category/congelados">  Congelados</Link> </li>
-                <li><Link className="menu-link" to="/category/pasteleria">  Pasteleria</Link> </li>
-                <li><Link className="menu-link" to="/category/menu-ejecutivo">  Menu Ejecutivo</Link> </li>
+                <li><Link className="menu-link" to="/category/hamburguesas"> Hamburguesas</Link> </li>
+                <li><Link className="menu-link" to="/category/papas">  Papas</Link> </li>
+                <li><Link className="menu-link" to="/category/kids">  Kids</Link> </li>
+                <li><Link className="menu-link" to="/category/parapicar">  Para picar</Link> </li>
                 <CartWidget/>
             </div>
         </div>

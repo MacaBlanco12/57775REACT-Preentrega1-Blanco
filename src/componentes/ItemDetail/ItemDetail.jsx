@@ -1,13 +1,12 @@
 import React, {  useContext, useState } from 'react'
 import './ItemDetail.css'
-
-import ItemCount from '../ItemCount/ItemCount';
-import { Context } from '../../Context/Context';
+import ItemCount from '../Item/ItemCount/ItemCount'
+import { Context } from '../../Context/Context'
 
 
 const ItemDetail = ({ item }) => {
 
-    const {carrito,Agregar} = useContext(Context);
+    const {carrito,cart,Agregar} = useContext(Context);
 
     const [cantidad,setCantidad] = useState(1);
 

@@ -1,0 +1,41 @@
+.producto h1, h2,.carritoVacio{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.productos{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.botonesCarrito {
+    display: flex;
+    justify-content:center;  
+    align-items: center;  
+}
+
+
+
+.finalizar, .vaciar {
+    background-color: #b75d8d;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; 
+}
+
+.finalizar:hover,.vaciar:hover {
+    background-color: #b3005f;
+}
+
+
+.carritoVacio{
+
+}
