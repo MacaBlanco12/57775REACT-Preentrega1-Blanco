@@ -7,6 +7,7 @@ import Foot from './componentes/Foot'
 import { CartProvider } from './Context/Context'
 import { Carrito } from './componentes/Carrito/Carrito'
 import Finalizar from './componentes/Finalizar/Finalizar'
+import Valoraciones from './componentes/Valoraciones/Valoraciones'
 const App = () => {
   
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/carrito/:id" element={<ItemDetailContainer />} />
           <Route path="/carrito" element={<Carrito />} />
           <Route path="/checkout" element={<Finalizar />} />
+          <Route path="/valoraciones" element={<Valoraciones />} />
         </Routes>
         <Foot />
       </BrowserRouter>

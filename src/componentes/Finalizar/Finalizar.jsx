@@ -7,7 +7,7 @@ import { db } from '../../firebase/config';
 
 const Finalizar = () => {
 
-  const { cart, precioTotal, vaciar, eliminarItem } = useContext(Context);
+  const { cart, precioTotal, vaciar } = useContext(Context);
 
   const [pedidoId, setPedidoId] = useState("")
   const { register, handleSubmit } = useForm();
@@ -29,7 +29,7 @@ const Finalizar = () => {
 
   if (pedidoId){
     return  (
-      <div className="container">
+      <div className="containerPedido">
         <h1>¡GRACIAS POR TU COMPRA!</h1>
         <h5>Numero de pedido:{pedidoId}</h5>
       </div>
@@ -38,7 +38,7 @@ const Finalizar = () => {
   }
 
   return (
-    <div className='container'>
+    <div className='containerDatos'>
       <h1>Datos de compra</h1>
       <form className='formulario' onSubmit={handleSubmit(enviar)}>
 
@@ -49,12 +49,12 @@ const Finalizar = () => {
         <input type="text" placeholder='Ingresa una descrpcion (opcional)'{...register("descripcion")} />
         <input type="text" placeholder='Pedido especial'{...register("pedidoespecial")} />
 
-        <button className='enviar' type='submit'> Pedir </button>
+        <button className='boton-item' type='submit'> Pedir </button>
       </form>
 
 
-      <h1>¡Gracias por su compra!</h1>
-      <Link to="/">Ir al inicio</Link>
+      
+      <Link to="/" className='boton-item'>Ir al inicio</Link>
     </div>
   )
 }

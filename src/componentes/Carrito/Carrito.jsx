@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Context } from '../../Context/Context'; // Ajusta la ruta según tu estructura de archivos
-import './carrito.css'
 export const Carrito = () => {
     const {cart, precioTotal, vaciar,eliminarItem } = useContext(Context);
    
@@ -25,7 +24,7 @@ export const Carrito = () => {
                         <p>Precio unitario: ${item.precio}</p>
                         <p>Cantidad: {item.cantidad}</p>
                         <p>Precio: ${item.cantidad * item.precio}</p>
-                        <button onClick={ ()=>{eliminaUnItem(item.id)}}>elimina</button>
+                        <button className='boton-item' onClick={ ()=>{eliminaUnItem(item.id)}}>X</button>
                     </div>
                 ))
             ) : (
@@ -42,14 +41,14 @@ export const Carrito = () => {
                     </div>
 
                     <div className='botonesCarrito'>
-                        <Link to="/checkout" className='finalizar'  >Finalizar compra</Link>
-                        <Link to="/" className='vaciar' onClick={vaciarCarrito}>Vaciar carrito</Link>
+                        <Link to="/checkout" className='boton-item'  >Finalizar compra</Link>
+                        <Link to="/" className='boton-item' onClick={vaciarCarrito}>Vaciar carrito</Link>
                     </div>
                 </>
             )}
 
             {cart.items.length === 0 && (
-                <Link to="/">Agregar productos</Link>
+                <Link to="/" className='boton-item '>Agregar productos</Link>
             )}
         </div>
     );

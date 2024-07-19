@@ -1,6 +1,5 @@
 import React, {  useContext, useState } from 'react'
-import './ItemDetail.css'
-import ItemCount from '../Item/ItemCount/ItemCount'
+import ItemCount from '../ItemCount/ItemCount'
 import { Context } from '../../Context/Context'
 
 
@@ -24,8 +23,9 @@ const ItemDetail = ({ item }) => {
 
     return (
         <div className='menuDiarioContenedor'>
+            <img className='imgMenu' src={item.imagen}  />
             <div className='menuDiarioContenido'>
-                <img className='imgMenu' src={item.imagen} alt={item.nombre} />
+                
                 <p>{item.descripcion}</p>
                 <p>Precio: ${item.precio} </p>
                 <p>Categoria: {item.categoria} </p>

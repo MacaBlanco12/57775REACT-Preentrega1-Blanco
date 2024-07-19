@@ -1,0 +1,113 @@
+$primary-color: #072a42;
+$font-stack: 'Arial, sans-serif';
+//paleta de colores
+/* #F21628
+#DE1714
+#0ABF04
+#F2C84B
+#FDD34D
+#A61103
+#FFEC09 */
+// estilos base
+body {
+  background-color: #FDD34D;
+  color: $primary-color;
+  margin: 0;
+  padding: 0;
+}
+
+// Estructura y Layout
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #FDD34D;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  // Imágenes
+  .imgLogo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  // Menú
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  // Enlaces del menú
+  .menu li a {
+    font-family:fantasy;
+    font-size: 1.125rem;
+    font-weight:lighter;
+    text-decoration: none;
+    color: #DE1714;
+    width: 100%;
+    text-align: center;
+
+  }
+  
+  // Estilo al pasar el ratón sobre los enlaces del menú
+  .menu li a:hover {
+    font-size: 1.375rem;
+    background-color: #EEAB36 ;
+    color: #A61103;
+    font-size: 20px;
+    border-bottom: 1px solid #FDD34D;
+  }
+  
+.contenedorMenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  // ITEM DETAIL
+  
+.imgMenu{
+    width: 100px; 
+    height: auto;
+}
+.menuDiarioContenedor{
+
+
+}
+
+.menuDiarioContenido{ 
+    margin: 1rem;
+    padding: 1rem;
+    width: 16rem;
+    border: solid 1px grey;
+    box-shadow: 0 4px 8px #0006;
+    border-radius: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+}
+
+.boton-item {
+    background-color: #A61103;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .ver-mas:hover {
+    background-color: #EEAB36       ;
+  }

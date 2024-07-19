@@ -32,7 +32,7 @@ const ItemListContainer = () => {
 
   return (
 
-    <div>
+    <div className='contenedorMenu'>
       
       {productos && <ItemList productos={productos} />}
 

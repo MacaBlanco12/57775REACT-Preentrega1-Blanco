@@ -1,6 +1,0 @@
-.p{
-    position: absolute;
-        top: 50%; /* Coloca el centro del elemento en el 50% de la altura */
-        left: 50%; /* Coloca el centro del elemento en el 50% del ancho */
-        transform: translate(-50%, -50%); /* Corrige para centrar completamente el elemento */
-    }

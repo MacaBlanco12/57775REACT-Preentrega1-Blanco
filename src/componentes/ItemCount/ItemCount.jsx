@@ -8,11 +8,11 @@ const ItemCount = ({cantidad, decrementaContador, incrementaContador, Agregar}) 
     return (
         <div className='contador'>
             <div className='botones'>
-            <button className='botonR' onClick={decrementaContador} disabled={cantidad === 0} >-</button>
+            <button className='boton-item' onClick={decrementaContador} disabled={cantidad === 0} >-</button>
             <p>{cantidad}</p>
-            <button className='botonS' onClick={incrementaContador} >+</button>
+            <button className='boton-item' onClick={incrementaContador} >+</button>
             </div>
-            <button className="botonAñade" onClick={Agregar}>Agregar al carrito</button>
+            <button className="boton-item" onClick={Agregar}>Agregar al carrito</button>
 
         </div>
     )
