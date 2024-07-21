@@ -57,4 +57,3 @@ export const Carrito = () => {
 }
 
 export default Carrito;
-

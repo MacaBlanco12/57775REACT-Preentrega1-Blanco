@@ -30,6 +30,7 @@ export const CartProvider = ({ children }) => {
       total,
       qty
     });
+ 
   };
 
   const precioTotal = () => {
@@ -59,6 +60,7 @@ export const CartProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem("carrito", JSON.stringify(cart));
   }, [cart]);
+
 
   return (
     <Context.Provider value={{cart, Agregar, precioTotal, vaciar , eliminarItem}}>
