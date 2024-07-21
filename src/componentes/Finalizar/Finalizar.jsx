@@ -29,7 +29,7 @@ const Finalizar = () => {
 
   if (pedidoId){
     return  (
-      <div className="containerPedido">
+      <div className="containeredido">
         <h1>¡GRACIAS POR TU COMPRA!</h1>
         <h5>Numero de pedido:{pedidoId}</h5>
       </div>
@@ -38,8 +38,8 @@ const Finalizar = () => {
   }
 
   return (
-    <div className='containerDatos'>
-      <h1>Datos de compra</h1>
+    <div className='container-form'>
+      <h1>Datos de envio </h1>
       <form className='formulario' onSubmit={handleSubmit(enviar)}>
 
         <input type="text" placeholder='Ingresa tu nombre' {...register("nombre")} />

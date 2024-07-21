@@ -22,20 +22,22 @@ const ItemDetail = ({ item }) => {
 
 
     return (
-        <div className='menuDiarioContenedor'>
+        <div className='container-item'>
+            <div className="content">
             <img className='imgMenu' src={item.imagen}  />
-            <div className='menuDiarioContenido'>
-                
-                <p>{item.descripcion}</p>
-                <p>Precio: ${item.precio} </p>
-                <p>Categoria: {item.categoria} </p>
-                <ItemCount 
+            <ItemCount 
                 cantidad={cantidad} 
                 incrementaContador={incrementaContador} 
                 decrementaContador={decrementaContador} 
                 Agregar= {()=>{Agregar(item,cantidad)}}
-                />
-            
+            />
+            </div>
+            <div className='content-detail'>
+                <h1>{item.nombre}</h1>
+                <h2>¿Que contiene?<br/>
+                    {item.descripcion}</h2>
+                <p>Precio: ${item.precio} </p>
+
             </div>
         </div>
 

@@ -3,7 +3,7 @@ import Item from '../Item/Item'
 
 const ItemList = ({ productos }) => {
     return (
-        <div>
+        <div className='item-list'>
 
 
             {

@@ -9,29 +9,27 @@ import { Carrito } from './componentes/Carrito/Carrito'
 import Finalizar from './componentes/Finalizar/Finalizar'
 import Valoraciones from './componentes/Valoraciones/Valoraciones'
 const App = () => {
-  
   return (
-
     <CartProvider>
       <BrowserRouter>
-      
-        <NavBar />
-        
-        <Routes>
-          <Route path="/" element={<ItemListContainer />} />
-          <Route path="/item/:id" element={<ItemDetailContainer />} />
-          <Route path="/category/:id" element={<ItemListContainer />} />
-          <Route path="/carrito/:id" element={<ItemDetailContainer />} />
-          <Route path="/carrito" element={<Carrito />} />
-          <Route path="/checkout" element={<Finalizar />} />
-          <Route path="/valoraciones" element={<Valoraciones />} />
-        </Routes>
-        <Foot />
+        <div className="app-container">
+          <NavBar />
+          <main className="content">
+            <Routes>
+              <Route path="/" element={<ItemListContainer />} />
+              <Route path="/item/:id" element={<ItemDetailContainer />} />
+              <Route path="/category/:id" element={<ItemListContainer />} />
+              <Route path="/carrito/:id" element={<ItemDetailContainer />} />
+              <Route path="/carrito" element={<Carrito />} />
+              <Route path="/checkout" element={<Finalizar />} />
+              <Route path="/valoraciones" element={<Valoraciones />} />
+            </Routes>
+          </main>
+          <Foot />
+        </div>
       </BrowserRouter>
-      </CartProvider>
-
-
-  )
+    </CartProvider>
+  );
 }
 
-export default App
+export default App;

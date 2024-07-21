@@ -12,8 +12,7 @@ const NavBar = () => {
                 <li><Link className="menu-link" to="/category/hamburguesas"> HAMBURGUESAS</Link> </li>
                 <li><Link className="menu-link" to="/category/papas">  PAPAS</Link> </li>
                 <li><Link className="menu-link" to="/category/kids">  KIDS</Link> </li>
-                <Link to="/"><img  className='imgLogo' src="/assets/logo.jpg" alt="imagen del logo" />
-                </Link>
+                <Link to="/"><img  className='imgLogo' src="/assets/logo.jpg" alt="imagen del logo" /></Link>
                 <li><Link className="menu-link" to="/category/parapicar">  PICOTEO</Link> </li>
                 <li><Link className="menu-link" to="/valoraciones">  EXPERIENCIA MOTLEY</Link> </li>
 
