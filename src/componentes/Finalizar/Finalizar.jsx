@@ -29,7 +29,7 @@ const Finalizar = () => {
 
   if (pedidoId){
     return  (
-      <div className="containeredido">
+      <div className="container-pedido">
         <h1>¡GRACIAS POR TU COMPRA!</h1>
         <h5>Numero de pedido:{pedidoId}</h5>
       </div>
