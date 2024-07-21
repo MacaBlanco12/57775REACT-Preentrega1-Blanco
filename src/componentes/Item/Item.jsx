@@ -9,7 +9,13 @@ const Item = ({ producto }) => {
                 <img className='imgMenu' src={producto.imagen} alt={producto.nombre} />
                 <h4>{producto.nombre}</h4>
                 <p>{producto.descripcion}</p>
-                <p>Precio: ${producto.precio} </p>
+                
+                {producto.stock > 0 ? (
+                    <p>Precio: ${producto.precio} </p>
+                ) : (
+                    <p>"Sin stock"</p>
+                )}
+                
                 <p>Categoría: {producto.categoria}</p>
                 <Link className="boton-item" to={`/item/${producto.id} `} >Ver mas</Link>
             </div>

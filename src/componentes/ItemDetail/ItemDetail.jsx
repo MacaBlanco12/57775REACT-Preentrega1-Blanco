@@ -5,7 +5,7 @@ import { Context } from '../../Context/Context'
 
 const ItemDetail = ({ item }) => {
 
-    const {carrito,cart,Agregar} = useContext(Context);
+    const {Agregar} = useContext(Context);
 
     const [cantidad,setCantidad] = useState(1);
 
@@ -16,7 +16,9 @@ const ItemDetail = ({ item }) => {
 
     }
     const incrementaContador = () => {
-        if (cantidad < item.stock ) {setCantidad(cantidad + 1)}
+        if (cantidad < item.stock ) {setCantidad(cantidad + 1)}else{
+            
+        }
 
     };
 
@@ -26,6 +28,7 @@ const ItemDetail = ({ item }) => {
             <div className="content">
             <img className='imgMenu' src={item.imagen}  />
             <ItemCount 
+               
                 cantidad={cantidad} 
                 incrementaContador={incrementaContador} 
                 decrementaContador={decrementaContador} 
@@ -35,7 +38,7 @@ const ItemDetail = ({ item }) => {
             <div className='content-detail'>
                 <h1>{item.nombre}</h1>
                 <h2>¿Que contiene?<br/>
-                    {item.descripcion}</h2>
+                {item.descripcion}</h2>
                 <p>Precio: ${item.precio} </p>
 
             </div>
