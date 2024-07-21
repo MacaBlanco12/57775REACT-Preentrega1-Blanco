@@ -5,6 +5,7 @@ const ItemCount = ({stock, cantidad, decrementaContador, incrementaContador, Agr
     const {cart} =useContext(Context)
     const { qty } = cart;
     const a=qty+cantidad
+
     return (
         <div className='container-counter'>
             
@@ -14,7 +15,7 @@ const ItemCount = ({stock, cantidad, decrementaContador, incrementaContador, Agr
             <button className='boton-item' onClick={incrementaContador}disabled={cantidad >= stock}>+</button>
             </div>
             
-            {a< stock ? (
+            {a < stock ? (
                 <button 
                     className="boton-add" 
                     onClick={Agregar}

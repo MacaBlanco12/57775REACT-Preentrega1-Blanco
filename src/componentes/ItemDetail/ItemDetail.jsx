@@ -28,11 +28,11 @@ const ItemDetail = ({ item }) => {
             <div className="content">
             <img className='imgMenu' src={item.imagen}  />
             <ItemCount 
-               
+                stock={item.stock}
                 cantidad={cantidad} 
                 incrementaContador={incrementaContador} 
                 decrementaContador={decrementaContador} 
-                Agregar= {()=>{Agregar(item,cantidad)}}
+                Agregar= {()=>{Agregar(item.cantidad)}}
             />
             </div>
             <div className='content-detail'>
